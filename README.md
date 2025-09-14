@@ -13,9 +13,31 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/SWIFT_2023_logo.svg" width="180" alt="SWIFT Logo">
 </p>
 
+<h1 align="center">🎥 SWIFT gpi Video Series</h1>
 
 <p align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzg4OXJ1NjlrM200YXcwNzVmbmJqeTRuZW15cndpa3ZwdWNtb3RqdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5qRIZcO2la5rxa45uj/giphy.gif" width="200" alt="SWIFT Animation">
+  <table align="center">
+    <tr>
+      <td align="center">
+        <a href="https://youtu.be/KcAXGXUDosM" target="_blank">
+          <img src="https://img.youtube.com/vi/KcAXGXUDosM/0.jpg" width="250"/><br>
+          🎥 SWIFT gpi for Corporates
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://youtu.be/lQMWqCIjub8" target="_blank">
+          <img src="https://img.youtube.com/vi/lQMWqCIjub8/0.jpg" width="250"/><br>
+          🎥 SWIFT gpi Explained
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://youtu.be/AR25P2YICrM" target="_blank">
+          <img src="https://img.youtube.com/vi/AR25P2YICrM/0.jpg" width="250"/><br>
+          🎥 gpi Statistics 2019
+        </a>
+      </td>
+    </tr>
+  </table>
 </p>
 
 ---
