@@ -296,6 +296,25 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install fastapi uvicorn pydantic sqlite-utils
 ```
 
+### ▶️ Run the Mock Tracker
+```bash
+uvicorn mock_tracker:app --reload
+```
+
+Now open in your browser:
+👉 http://127.0.0.1:8000/docs
+
+This will give you an interactive API Explorer (Swagger UI) where you can test endpoints in real time. 🚀
+
+### ⚡ Quick Test with cURL
+
+Untuk cek apakah API jalan:
+```bash
+curl -X GET "http://127.0.0.1:8000/transactions" -H "accept: application/json"
+```
+
+
+---
 
 <h3 align="center" style="color:#39ff14; font-size:1.5rem;">
 💡 ☕ Traktir Kopi & Nasi Padang / Nasi Gorengnya ya cuy! 😄
