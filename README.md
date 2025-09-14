@@ -20,19 +20,19 @@
     <tr>
       <td align="center">
         <a href="https://youtu.be/KcAXGXUDosM" target="_blank">
-          <img src="https://img.youtube.com/vi/KcAXGXUDosM/0.jpg" width="250"/><br>
+          <img src="https://img.youtube.com/vi/KcAXGXUDosM/0.jpg" width="200"/><br>
           🎥 SWIFT gpi for Corporates
         </a>
       </td>
       <td align="center">
         <a href="https://youtu.be/lQMWqCIjub8" target="_blank">
-          <img src="https://img.youtube.com/vi/lQMWqCIjub8/0.jpg" width="250"/><br>
+          <img src="https://img.youtube.com/vi/lQMWqCIjub8/0.jpg" width="200"/><br>
           🎥 SWIFT gpi Explained
         </a>
       </td>
       <td align="center">
         <a href="https://youtu.be/AR25P2YICrM" target="_blank">
-          <img src="https://img.youtube.com/vi/AR25P2YICrM/0.jpg" width="250"/><br>
+          <img src="https://img.youtube.com/vi/AR25P2YICrM/0.jpg" width="200"/><br>
           🎥 gpi Statistics 2019
         </a>
       </td>
