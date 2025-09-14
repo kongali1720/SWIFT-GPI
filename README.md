@@ -313,8 +313,139 @@ Untuk cek apakah API jalan:
 curl -X GET "http://127.0.0.1:8000/transactions" -H "accept: application/json"
 ```
 
+### 6️⃣ Example API Workflow
+### a. Create a Payment (pacs.008 equivalent)
+
+Request
+```http
+POST /payments
+Content-Type: application/json
+```
+
+```json
+{
+  "uetr": "550e8400-e29b-41d4-a716-446655440000",
+  "amount": 1000.00,
+  "currency": "USD",
+  "sender": "BANKUS33XXX",
+  "receiver": "BNINIDJAXXX"
+}
+```
+
+### b. Update Payment Status (pacs.002 equivalent)
+
+Request
+
+```http
+PATCH /payments/550e8400-e29b-41d4-a716-446655440000
+Content-Type: application/json
+```
+
+```json
+{
+  "status": "Credited"
+}
+```
+
+### c. Track Payment in Real-Time
+
+Request
+```http
+GET /payments/550e8400-e29b-41d4-a716-446655440000
+```
+
+### Response
+```json
+{
+  "uetr": "550e8400-e29b-41d4-a716-446655440000",
+  "status": "Credited",
+  "amount": 1000.00,
+  "currency": "USD",
+  "sender": "BANKUS33XXX",
+  "receiver": "BNINIDJAXXX",
+  "timestamp": "2025-09-13T12:45:00Z"
+}
+```
+
+### 7️⃣ Next Steps
+
+🔗 Integrate with corporate treasury systems or test apps.
+
+🔐 Add OAuth2 / JWT for secure authentication.
+
+📡 Extend simulation to support MT/MX (ISO 20022) message parsing.
+
+📊 Visualize transaction flows using a dashboard (React, D3.js, or Grafana).
 
 ---
+
+## 🔧 Optional Enhancements
+
+### 1️⃣ Database Initialization (SQLite Example)  
+Kalau mau mulai dengan tabel kosong untuk tracking payments:  
+```bash
+sqlite-utils create-database gpi.db
+sqlite-utils create-table gpi.db payments \
+  uetr text \
+  amount real \
+  currency text \
+  sender text \
+  receiver text \
+  status text \
+  timestamp text
+```
+
+### 2️⃣ Run with Custom Host/Port
+
+Supaya bisa diakses dari network (bukan cuma localhost):
+```bash
+uvicorn mock_tracker:app --host 0.0.0.0 --port 8080 --reload
+```
+
+### 3️⃣ Install via requirements.txt
+
+Supaya lebih rapi:
+```bash
+pip freeze > requirements.txt
+pip install -r requirements.txt
+```
+
+### 4️⃣ Docker Support (Optional)
+
+Biar gampang deploy ke server/container:
+
+Dockerfile
+```bash
+FROM python:3.11-slim
+
+WORKDIR /app
+COPY . /app
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["uvicorn", "mock_tracker:app", "--host", "0.0.0.0", "--port", "8000"]
+```
+
+### Build & Run
+```bash
+docker build -t swift-gpi-tracker .
+docker run -p 8000:8000 swift-gpi-tracker
+```
+
+### 5️⃣ Unit Testing (Pytest Example)
+
+Supaya tiap endpoint bisa dites otomatis:
+```bash
+test_tracker.py
+```
+
+### Jalankan:
+```bash
+pytest -v
+```
+
+---
+
 
 <h3 align="center" style="color:#39ff14; font-size:1.5rem;">
 💡 ☕ Traktir Kopi & Nasi Padang / Nasi Gorengnya ya cuy! 😄
