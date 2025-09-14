@@ -1,0 +1,35 @@
+# 📂 SWIFT gpi Resources & Downloads
+
+Here you can find additional materials, documents, and videos related to **SWIFT gpi**, useful for corporates, banks, and developers.
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/SWIFT_2023_logo.svg" width="120" alt="SWIFT Logo">
+</p>
+
+---
+
+## 🗂️ Resources Table
+
+| Type   | Title | Link |
+|--------|-------|------|
+| 📊 Excel | SWIFT Compatible Application Profile Sheet 2024 (SWIFT gpi for Corporates) | [Download](assets/swiftcompatibleapplicationprofilesheet2024_swiftgpiforcorporates.xlsx) |
+| 🎥 Video | SWIFT gpi for Corporates | [Watch](assets/swift_gpi_forcorporates.mp4) |
+| 🎥 Video | SWIFT gpi Explained | [Watch](assets/swift_gpi_explained.mp4) |
+| 🎥 Video | gpi Statistics 2019 | [Watch](assets/gpi_stats_2019.mp4) |
+| 📑 PDF  | SWIFT Paper gpi | [View](assets/swift_paper_gpi.pdf) |
+| 📑 PDF  | SWIFT gpi Brochure (September 2019) | [View](assets/swift_gpi_brochure_september_2019.pdf) |
+
+---
+
+## 💡 Usage Notes
+
+- Videos are hosted locally; click **Watch** to view directly in your browser.
+- PDFs and Excel files can be downloaded for offline reference.
+- These materials complement the **SWIFT GPI Tracker simulation** and provide real-world examples and official documentation.
+- Keep the `assets/` folder structure unchanged for links to work correctly.
+
+---
+
+<p align="center">
+  [Back to Main README](../README.md)
+</p>
